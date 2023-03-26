@@ -1,9 +1,15 @@
+import React from 'react';
 import './App.css';
+import Slider from './Slider';
 
 function App() {
   return (
-    <div className="App">
-      <h1> Hello React! </h1>
+    <div className="container">
+      <div className="main-image">Image</div>
+      <div className="sidebar">
+        Sidebar
+        </div>
+        <Slider />
     </div>
   );
 }
