@@ -10,9 +10,7 @@ body{
   display: grid;
   grid-template-columns: 1fr auto;
   grid-template-rows: 1fr auto;
-  grid-template-areas:  
-  "image sidebar" 
-  "slider sidebar";
+  grid-template-areas:  "image sidebar" "slider sidebar";
   height: 100vh; /*100 view height*/
   width: 100vw;
   background-color: #DADADA;
@@ -31,7 +29,7 @@ body{
 .sidebar{
   grid-area: sidebar;
   background-color: hsl(265, 100%, 86%);
-  border-left: 2px solid hsl(265, 100%, 56%);
+  border-left: 1.5px solid hsl(265, 100%, 56%);
   display: flex;
   flex-direction: column;
   align-items: stretch;
@@ -49,6 +47,24 @@ body{
 
 .sidebar-item:hover, sidebar-item:focus {
   background-color:hsl(265, 100%, 76%);
+}
+
+.sidebar-item.active{
+  background-color: hsl(265, 100%, 70%);
+}
+
+.sidebar-item::after{
+  content: '';
+  position: absolute;
+  width: 70%;
+  left: 15%;
+  bottom: 0;
+  height: 1px;
+  background-color: hsl(265, 100%, 46%);
+}
+
+.sidebar-item:last-child::after{
+  display: none;
 }
 
 .slider-container{
