@@ -1,2 +1,2 @@
 # Photo-Editor-in-React-and-Css
-Building a React App with React Js and Css Filters
+Building a Photo Editor App in React Js and Css Filters

@@ -12,6 +12,7 @@ body{
   grid-template-rows: 1fr auto;
   grid-template-areas:  
   "image sidebar" 
+  "image sidebar"
   "slider sidebar";
   height: 100vh; /*100 view height*/
   width: 100vw;
