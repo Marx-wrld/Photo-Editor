@@ -11,10 +11,11 @@ body{
   grid-template-columns: 1fr auto;
   grid-template-rows: 1fr auto;
   grid-template-areas:  
-  "image sidebar",
+  "image sidebar" 
+  "image sidebar"
   "slider sidebar";
   height: 100vh; /*100 view height*/
-  width: 10vw;
+  width: 100vw;
   background-color: #DADADA;
 }
 
@@ -30,7 +31,25 @@ body{
 
 .sidebar{
   grid-area: sidebar;
-  background-color: purple;
+  background-color: hsl(265, 100%, 86%);
+  border-left: 2px solid hsl(265, 100%, 56%);
+  display: flex;
+  flex-direction: column;
+  align-items: stretch;
+}
+
+.sidebar-item{
+  cursor: pointer;
+  border: none;
+  outline: none;
+  background-color: hsl(265, 100%, 8 6%);
+  padding: 1rem;
+  position: relative; /*we will need to make underlines which are our sudo elements absolutely positioned*/
+  transition: background-color 350ms;
+}
+
+.sidebar-item:hover, sidebar-item:focus {
+  background-color:hsl(265, 100%, 76%);
 }
 
 .slider-container{
@@ -40,6 +59,6 @@ body{
 }
 
 .slider{
-  width: 100%; 
+  width: 100%; /**/
   cursor: pointer;
 }
