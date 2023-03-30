@@ -47,17 +47,17 @@ const DEFAULT_OPTIONS = [ //we are going to take this DefaultOptions and turn it
   {
     name: 'Sepia',
     property: 'sepia',
-    value: 100,
+    value: 0,
     range: {
       min: 0,
-      max: 200
+      max: 100
     },
     unit: '%'
   },
   {
     name: 'Hue Rotate',
     property: 'hue-rotate',
-    value: 100,
+    value: 0,
     range: {
       min: 0,
       max: 360 //360 because we have 360 deg of hue
@@ -102,6 +102,8 @@ function App() {
     return { filter: filters.join(' ')} //putting a space before each of our different array strings
   }
 
+  //console.log(getImageStyle())
+
   return (
     <div className="container">
       <div className="main-image" style={getImageStyle()}/>
@@ -129,7 +131,7 @@ function App() {
           handleChange={handleSliderChange}
         />
     </div>
-  );
+  )
 }
 
 export default App;
