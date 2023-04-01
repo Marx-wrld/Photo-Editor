@@ -21,7 +21,7 @@ body{
   background-image: url("https://source.unsplash.com/dnZ-XHfi_C0");
   width: 100%;
   height: 100%;
-  background-position: bottom center;
+  background-position: top center;
   background-size: contain;
   background-repeat: no-repeat;
 }
@@ -69,8 +69,8 @@ body{
 
 .slider-container{
   grid-area: slider;
-  margin-top: 2rem;
-  padding: 2rem;
+  margin-top: 0.5rem;
+  padding: 1rem;
 }
 
 .slider{
